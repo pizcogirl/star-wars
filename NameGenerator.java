@@ -36,9 +36,10 @@ public class NameGenerator
     {
         String resultado = "";
         // Generamos el nombre
-        resultado = nombre.substring(0, POSICIONES) + apellido.toLowerCase().substring(0, POSICIONES);
+        resultado = apellido.substring(0, POSICIONES) + nombre.toLowerCase().substring(0, POSICIONES);
         // Generamos el apellido
         resultado = resultado + " " + apellidoMaterno.substring(0, POSICIONES) + ciudad.toLowerCase().substring(0, POSICIONES);
+        // Devuelve el nombre
         return resultado;
     }
 }
